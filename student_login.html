@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+<!--        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: skyblue;
+                color: black;
+            }
+            form{
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+            input{
+                font-size: 20px;
+            }
+            input{
+                border: none;
+                border-radius: 20px;
+                width: 100%;
+            }
+            input::placeholder{
+                left: 12px;
+                position: relative;
+                font-style: italic;
+            }
+            input:focus{
+                outline-color: whitesmoke;
+            }
+            button{
+                font-size: 15px;
+                border: none;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border-radius: 20px 0 20px 20px;
+            }
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+            a{
+                font-size: 30px;
+                text-decoration: none;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="common_details.html"><-</a>
+        <h1 style="text-align: center; font-size: 3rem;">CALCULATE STUDENT INTERNAL MARKS</h1>
+        <form method="post" action="internalmark.jsp">
+            <input type="number" name="reg" placeholder="Enter your register number" autocomplete="off" required/>
+            <br><br>
+            <button>Check internal mark</button>
+            <p></p>
+        </form>
+    </body>
+</html>

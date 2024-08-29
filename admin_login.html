@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Admin Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: skyblue;
+            }
+            h1{
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 3rem;
+            }
+            input{
+                font-size: 20px;
+                border: none;
+                border-radius: 20px;
+            }
+             input::placeholder{
+                left: 12px;
+                position: relative;
+                font-style: italic;
+            }
+            input:focus{
+                outline-color: whitesmoke;
+            }
+            form{
+                position: absolute;
+                top: 30%;
+                left: 40%;
+            }
+             button{
+                font-size: 17px;
+                border: none;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border-radius: 20px 0 20px 20px;
+            }
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>welcome admin!</h1>
+        <form method="post" action="admin_authentication.jsp">
+            <input type="number" autocomplete="off" name="admin_id" placeholder="Enter the admin id" required>
+            <br><br>
+            <button>Login</button>
+        </form>
+    </body>
+</html>

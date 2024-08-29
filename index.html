@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+<!--        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: skyblue;
+                overflow: hidden;
+            }
+            h1{
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 3rem;
+            }
+            .student_img{
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+            }
+            .admin_img{
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+            }
+            .row{
+                width: 100%;
+                height: 80%;
+/*                background-color: red;*/
+                display: flex;
+                position: absolute;
+                top: 10%;
+            }
+            .col-1{
+                width: 50%;
+                position: relative;
+                top: 20%;
+                left: 30%;
+            }
+            .col-2{
+                width: 50%;
+                position: relative;
+                top: 20%;
+                left: 5%;
+            }
+            button{
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border-radius: 20px;
+                position: relative;
+                left: 7%;
+                font-size: 15px;
+            }
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student internal mark calculation</h1>
+        <div class="row">
+            <form method="post" action="department.html" class="col-1">
+            <img src="images/student_login.jpg" alt="student_image" class="student_img"><br><br>
+            <button>Student Login</button>
+        </form>
+            <form method="post" action="admin_login.html" class="col-2">
+            <img src="images/Admin.jpg" alt="Admin_image" class="admin_img"><br><br>
+            <button>Admin Login</button>
+        </form>
+        </div>
+    </body>
+</html>
